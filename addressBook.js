@@ -99,3 +99,9 @@ console.log(addressBook)
 
 //console.log(addressBook[0])
 //console.log(addressBook[1])
+//UC4
+function searchForContact(contact){
+    return contact.firstName.includes("Bill")
+}
+addressBook.find(searchForContact).firstName = "Billl"
+console.log(addressBook)
