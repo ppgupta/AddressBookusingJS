@@ -89,5 +89,13 @@ class Contact{
         else throw "email ID is incorrect"
     }
 }
-let contact = new Contact("Bill","Gates","Parkelitevillas","Bangalore","Karnataka","333031","9876504321","bill.gates@microsoft.com")
-console.log(contact)
+let contact1 = new Contact("Bill","Gates","Parkelitevillas","Bangalore","Karnataka","393010","8460243765","bill.gates@microsoft.com")
+let contact2 = new Contact("Jeff","Bezoz","Parkelitefloors","Pune","Maharastra","393010","8460243765","jeff.bezoz@microsoft.com")
+//UC3
+let addressBook = new Array();
+addressBook.push(contact1)
+addressBook.push(contact2)
+console.log(addressBook)
+
+//console.log(addressBook[0])
+//console.log(addressBook[1])
