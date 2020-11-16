@@ -1,3 +1,4 @@
+//UC1
 class Contact{
     constructor(...parameters){
         this.firstName = parameters[0]
