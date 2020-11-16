@@ -2,7 +2,7 @@ class Contact{
     constructor(...parameters){
         this.firstName = parameters[0]
         this.lastName = parameters[1]
-        this.fullName = this.firstName+this.lastName;
+        this.fullName = this.firstName+" "+this.lastName;
         this.address = parameters[2]
         this.city = parameters[3]
         this.state = parameters[4]
@@ -89,19 +89,22 @@ class Contact{
         else throw "email ID is incorrect"
     }
 }
+
 let contact1 = new Contact("Bill","Gates","Parkelitevillas","Bangalore","Karnataka","393010","8460243765","bill.gates@microsoft.com")
 let contact2 = new Contact("Jeff","Bezoz","Parkelitefloors","Pune","Maharastra","393010","8460243765","jeff.bezoz@microsoft.com")
+
 //UC3
 let addressBook = new Array();
 addressBook.push(contact1)
 addressBook.push(contact2)
 console.log(addressBook)
-
-//console.log(addressBook[0])
-//console.log(addressBook[1])
 //UC4
 function searchForContact(contact){
     return contact.firstName.includes("Bill")
 }
-addressBook.find(searchForContact).firstName = "Billl"
+addressBook.find(searchForContact).firstName = "Bill"
 console.log(addressBook)
+//UC5
+addressBook.pop(addressBook.find(searchForContact))
+console.log(addressBook)
+console.log(addressBook[0])
